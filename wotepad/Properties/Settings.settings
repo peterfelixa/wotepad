@@ -1,0 +1,36 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="wotepad.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Application_Name" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Wotepad</Value>
+    </Setting>
+    <Setting Name="Application_SkinName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">McSkin</Value>
+    </Setting>
+    <Setting Name="Application_ShowStatus" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="Application_FontName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Tahoma</Value>
+    </Setting>
+    <Setting Name="Application_FontSize" Type="System.Single" Scope="User">
+      <Value Profile="(Default)">8</Value>
+    </Setting>
+    <Setting Name="Editor_FontName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Tahoma</Value>
+    </Setting>
+    <Setting Name="Editor_FontStyle" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Regular</Value>
+    </Setting>
+    <Setting Name="Editor_FontSize" Type="System.Single" Scope="User">
+      <Value Profile="(Default)">8</Value>
+    </Setting>
+    <Setting Name="Editor_FontUnderline" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="Editor_WordWrap" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

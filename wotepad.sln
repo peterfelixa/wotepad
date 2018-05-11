@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wotepad", "wotepad\wotepad.csproj", "{29301C1C-1339-4FD7-A34F-42EDE75861DB}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "wotepadInstaller", "wotepadInstaller\wotepadInstaller.vdproj", "{422DAF34-8AB5-4F1C-8FB0-501C1D74E353}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wotepadInstallerHelper", "wotepadInstallerHelper\wotepadInstallerHelper.csproj", "{35E1630F-E526-4CA9-9DDB-4E8B0A5C761C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		DefaultBuild|Any CPU = DefaultBuild|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{29301C1C-1339-4FD7-A34F-42EDE75861DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29301C1C-1339-4FD7-A34F-42EDE75861DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29301C1C-1339-4FD7-A34F-42EDE75861DB}.DefaultBuild|Any CPU.ActiveCfg = Debug|Any CPU
+		{29301C1C-1339-4FD7-A34F-42EDE75861DB}.DefaultBuild|Any CPU.Build.0 = Debug|Any CPU
+		{29301C1C-1339-4FD7-A34F-42EDE75861DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29301C1C-1339-4FD7-A34F-42EDE75861DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{422DAF34-8AB5-4F1C-8FB0-501C1D74E353}.Debug|Any CPU.ActiveCfg = Debug
+		{422DAF34-8AB5-4F1C-8FB0-501C1D74E353}.DefaultBuild|Any CPU.ActiveCfg = Debug
+		{422DAF34-8AB5-4F1C-8FB0-501C1D74E353}.DefaultBuild|Any CPU.Build.0 = Debug
+		{422DAF34-8AB5-4F1C-8FB0-501C1D74E353}.Release|Any CPU.ActiveCfg = Release
+		{35E1630F-E526-4CA9-9DDB-4E8B0A5C761C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35E1630F-E526-4CA9-9DDB-4E8B0A5C761C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35E1630F-E526-4CA9-9DDB-4E8B0A5C761C}.DefaultBuild|Any CPU.ActiveCfg = Debug|Any CPU
+		{35E1630F-E526-4CA9-9DDB-4E8B0A5C761C}.DefaultBuild|Any CPU.Build.0 = Debug|Any CPU
+		{35E1630F-E526-4CA9-9DDB-4E8B0A5C761C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35E1630F-E526-4CA9-9DDB-4E8B0A5C761C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
