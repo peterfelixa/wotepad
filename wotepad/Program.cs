@@ -27,6 +27,7 @@ namespace wotepad
         [STAThread]
         static void Main(string[] args)
         {
+            //Comment added by peter to check Latest version check.
             string filepath = string.Empty;
             try
             {
