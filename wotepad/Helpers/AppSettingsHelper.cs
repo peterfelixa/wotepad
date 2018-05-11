@@ -4,7 +4,7 @@
  * ||              Class Name  : AppSettingsHelper.cs
  * ||              Language    : CSharp
  * ||              Copyright   : Copyright©Symphion Inc 2003-2017 All Right Reserved
- * ||              Purpose     : To Handle/Store/Reload App Level Settings into/from xml file.
+ * ||              Purpose     : To Handle/Store/Reload Application Level Settings into/from XML file.
  * ==========================================================================================================*/
 using System;
 using System.Data;
