@@ -51,7 +51,12 @@ namespace wotepad
                 DevExpress.Utils.AppearanceObject.DefaultFont = new Font(AppSettings.AppFont.Wotepad_FontName, AppSettings.AppFont.Wotepad_FontSize);
             }
             catch (Exception) { }
-            Application.Run(new Wotepad(filepath));
+
+            Wotepad objWotepad = new Wotepad(filepath);
+            objWotepad.StartPosition = FormStartPosition.Manual;
+            objWotepad.Location = new Point(AppSettings.ApplicationStartup.FromLocation.X, AppSettings.ApplicationStartup.FromLocation.Y);
+            objWotepad.Size = new Size(AppSettings.ApplicationStartup.FormSize.Width, AppSettings.ApplicationStartup.FormSize.Height);
+            Application.Run(objWotepad);
         }
     }
 }

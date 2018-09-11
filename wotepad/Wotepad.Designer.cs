@@ -497,6 +497,7 @@ namespace wotepad
             this.Controls.Add(this.barDockControlTop);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Wotepad";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
             this.Text = "Wotepad";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.wotepad_FormClosing);
             this.Load += new System.EventHandler(this.wotepad_Load);

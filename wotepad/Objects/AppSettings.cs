@@ -32,5 +32,18 @@ namespace wotepad.Objects
         {
             public static bool Editor_WordWrap = false;
         }
+        public static class ApplicationStartup
+        {
+            public static class FromLocation
+            {
+                public static int X = 383;
+                public static int Y = 182;
+            }
+            public static class FormSize
+            {
+                public static int Width = 1037;
+                public static int Height = 566;
+            }
+        }
     }
 }

@@ -47,6 +47,11 @@ namespace wotepad.Helpers
 
                     DataColumn dcEditor_WordWrap = new DataColumn("Editor_WordWrap");
 
+                    DataColumn dcLocation_X = new DataColumn("Location_X");
+                    DataColumn dcLocation_Y = new DataColumn("Location_Y");
+                    DataColumn dcSize_Width = new DataColumn("Size_Width");
+                    DataColumn dcSize_Height = new DataColumn("Size_Height");
+
                     if (!dtAppSettings.Columns.Contains(dcApp_Skin.ColumnName))
                         dtAppSettings.Columns.Add(dcApp_Skin);
 
@@ -77,6 +82,19 @@ namespace wotepad.Helpers
 
                     if (!dtAppSettings.Columns.Contains(dcEditor_WordWrap.ColumnName))
                         dtAppSettings.Columns.Add(dcEditor_WordWrap);
+
+
+                    if (!dtAppSettings.Columns.Contains(dcLocation_X.ColumnName))
+                        dtAppSettings.Columns.Add(dcLocation_X);
+
+                    if (!dtAppSettings.Columns.Contains(dcLocation_Y.ColumnName))
+                        dtAppSettings.Columns.Add(dcLocation_Y);
+
+                    if (!dtAppSettings.Columns.Contains(dcSize_Width.ColumnName))
+                        dtAppSettings.Columns.Add(dcSize_Width);
+
+                    if (!dtAppSettings.Columns.Contains(dcSize_Height.ColumnName))
+                        dtAppSettings.Columns.Add(dcSize_Height);
                 }
             }
             catch (Exception)
@@ -102,6 +120,11 @@ namespace wotepad.Helpers
                     , AppSettings.EditorFont.Editor_UnderLine           //AppSettings.EditorFont.Editor_UnderLine
 
                     , AppSettings.EditorSettings.Editor_WordWrap        //AppSettings.EditorSettings.Editor_WordWrap
+
+                    , AppSettings.ApplicationStartup.FromLocation.X
+                    , AppSettings.ApplicationStartup.FromLocation.Y
+                    , AppSettings.ApplicationStartup.FormSize.Width
+                    , AppSettings.ApplicationStartup.FormSize.Height
                     );
                 dtAppSettings.TableName = "AppSettings";
                 dtAppSettings.WriteXml(Application.StartupPath + @"\AppSettings.xml");
@@ -144,6 +167,12 @@ namespace wotepad.Helpers
                     AppSettings.EditorFont.Editor_UnderLine = Convert.ToBoolean(dtAppSettings.Rows[0]["Editor_FontUnderline"].ToString());
 
                     AppSettings.EditorSettings.Editor_WordWrap = Convert.ToBoolean(dtAppSettings.Rows[0]["Editor_WordWrap"].ToString());
+
+
+                    AppSettings.ApplicationStartup.FormSize.Height = Convert.ToInt32(dtAppSettings.Rows[0]["Size_Height"].ToString());
+                    AppSettings.ApplicationStartup.FormSize.Width = Convert.ToInt32(dtAppSettings.Rows[0]["Size_Width"].ToString());
+                    AppSettings.ApplicationStartup.FromLocation.X = Convert.ToInt32(dtAppSettings.Rows[0]["Location_X"].ToString());
+                    AppSettings.ApplicationStartup.FromLocation.Y = Convert.ToInt32(dtAppSettings.Rows[0]["Location_Y"].ToString());
                 }
 
                 //AppSettings.SkinName = Settings.Default["Application_SkinName"].ToString();

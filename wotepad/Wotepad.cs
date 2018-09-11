@@ -672,7 +672,20 @@ namespace wotepad
         {
             bool canclose = CanCloseWotePad();
             if (!canclose)
+            {
                 e.Cancel = true;
+            }
+            else
+            {
+                AppSettings.ApplicationStartup.FormSize.Height = Size.Height;
+                AppSettings.ApplicationStartup.FormSize.Width = Size.Width;
+
+                AppSettings.ApplicationStartup.FromLocation.X = Location.X;
+                AppSettings.ApplicationStartup.FromLocation.Y = Location.Y;
+
+                AppSettingsHelper objAppSettingsHelper = new AppSettingsHelper();
+                objAppSettingsHelper.WriteAppSettings();
+            }
         }
         private void medtContent_EditValueChanged(object sender, EventArgs e)
         {
