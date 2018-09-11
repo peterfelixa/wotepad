@@ -661,10 +661,10 @@ namespace wotepad
             try
             {
                 splchkrWotepad.Check(medtContent);
-                //medtContent.Focus();
-                //medtContent.SelectAll();
-                //medtContent.Select(medtContent.SelectionLength, 0);
-                //medtContent.ScrollToCaret();
+                medtContent.Focus();
+                medtContent.SelectAll();
+                medtContent.Select(medtContent.SelectionLength, 0);
+                medtContent.ScrollToCaret();
             }
             catch (Exception) { }
         }
