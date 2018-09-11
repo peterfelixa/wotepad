@@ -12,7 +12,7 @@ namespace wotepad.Objects
 {
     public static class AppSettings
     {
-        public static string SkinName = "McSkin";
+        public static string SkinName = "Office 2016 Colorful";
         public static bool ShowStatusBar = true;
 
         public static class AppFont
